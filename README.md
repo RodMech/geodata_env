@@ -15,12 +15,12 @@ Make sure you have installed docker and docker compose in your machine. Click [h
 
 ## How to run it
 
-Just type `docker-compose up` for creating the container and launching jupyter-lab.
+Just type `docker-compose -f <PATH>/docker-compose.yml up` for creating the container and launching jupyter-lab.
 If executing from a remote instance, make sure you map the `localhost` address provided by the remote instance to the actual remote address. 
 The port mapping is  `8888:8888`.
 The access token is provided once the docker-compose command is executed in the command line.
-The folder `wkdir` is mounted as a volume in the work directory folder inside the container, so your files can be saved after the session.
-
+Your current working directory `$PWD` will be mounted as a volume in the work directory folder (`/opt/project`) inside the container, so your files can be saved after the session.
+Run it where you want it to work.
 
 ## Suggestions
 Please, do not hesitate to drop any questions or suggestions. Your comments are very much appreciated. 

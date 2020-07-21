@@ -5,6 +5,7 @@ services:
     build: 
       context: ./docker/
       network: host
+    image: geodata_env
     ports: 
       - "8888:8888"
     volumes:
